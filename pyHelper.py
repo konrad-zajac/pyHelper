@@ -39,7 +39,7 @@ while response != "0":
     inpC=input('is there an input, [1] - yes [o] - no n')
     inp=input('insert input')
     if inpC:
-        options[response](inp)
+        options[response]("inp")
     else:
         options[response]()
 

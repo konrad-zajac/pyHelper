@@ -1,3 +1,6 @@
+import os
+from os import listdir
+
 def endAppWoExt():
 
     x = input('input?\n')
@@ -8,5 +11,5 @@ def endAppWoExt():
 
 
     for f in listdir(os.path.dirname(os.path.abspath(__file__))):
-        if not (f == 'pyHelper.py'):
+        if (f != 'pyHelper.py') and (f != 'LIB'):
             os.rename(f, append(f))
